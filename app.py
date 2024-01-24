@@ -3,10 +3,10 @@ import pickle
 import pandas as pd
 import numpy as np
 
-populardf = pickle.load(open("book-recommender-system\Top50Books.pkl", "rb"))
-finaldf = pickle.load(open("book-recommender-system\FinalList.pkl", "rb"))
-books = pickle.load(open("book-recommender-system\Books.pkl", "rb"))
-similarity_score = pickle.load(open("book-recommender-system\SimilarityScore.pkl", "rb"))
+populardf = pickle.load(open("Top50Books.pkl", "rb"))
+finaldf = pickle.load(open("FinalList.pkl", "rb"))
+books = pickle.load(open("Books.pkl", "rb"))
+similarity_score = pickle.load(open("SimilarityScore.pkl", "rb"))
 
 app = Flask(__name__)
 
